@@ -1,0 +1,333 @@
+<html lang="en">
+<body>
+  <nav id="navbar">
+    <header>Web2 vs Web3</header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#introduction">Introduction</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#web3_ben">Benefits of Web3</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#comparison">Web2 vs Web3</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#web3_lim">Limitations of Web3</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#web3_ex">Web3 Coding Examples</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#cent_v_decent">Centralization vs Decentralization</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#closing">Closing Thoughts</a>
+      </li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="introduction">
+      <header>Introduction</header>
+       <article>
+          <p>Web2 refers to the version of the internet most of us know today. An internet dominated by companies that provide services in exchange for your personal data. Web3, in the context of Ethereum, refers to decentralized apps that run on the blockchain. These are apps that allow anyone to participate without monetising their personal data.
+         </p>
+       </article>
+    </section>
+    <section class="main-section" id="web3_ben">
+      <header>Benefits of Web3</header>
+      <article>
+        <p>Many Web3 developers have chosen to build dapps because of Ethereum's inherent decentralization:</p>
+        <ul>
+          <li>Anyone who is on the network has permission to use the service – or in other words, permission isn't required.
+          </li>
+          <li>No one can block you or deny you access to the service
+          </li>
+          <li>Payments are built in via the native token, ether (ETH)
+          </li>
+          <li>Ethereum is turing-complete, meaning you can pretty much program anything.
+          </li>
+        </ul>
+      </article>  
+    </section>
+    <section class="main-section" id="comparison">
+      <header>Web2 vs Web3</header>
+      <article>
+        <p>This doesn't mean that all services need to be turned into a dapp. These examples are illustrative of the main differences between web2 and web3 services.
+        </p>
+      </article>
+      <table>
+        <thead>
+        <tr>
+          <th>Web2</th>
+          <th>Web3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>
+            Twitter can censor any account or tweet
+          </td>
+          <td>
+            Web3 tweets would be uncensorable because control is decentralized
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Payment service may decide to not allow payments for certain types of work
+          </td>
+          <td>
+            Web3 payment apps require no personal data and can't prevent payments
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Servers for gig-economy apps could go down and affect worker income
+          </td>
+          <td>
+            Web3 servers can't go down – they use Ethereum, a decentralized network of 1000s of computers as their backend
+          </td>
+        </tr>
+        </tbody>  
+      </table>
+    </section>
+    <section class="main-section" id="web3_lim">
+      <header>Limitations of Web3</header>
+      <aritlce>
+        <p>
+          Web3 has some limitations right now:
+        </p>
+        <ul>
+          <li>Scalability
+          </li>
+          <li class="sub">
+            transactions are slower on web3 because they're decentralized. Changes to state, like a payment, need to be processed by a miner and propagated throughout the network.
+          </li>
+          <li>
+            UX
+          </li>
+          <li class="sub">
+            interacting with web3 applications can require extra steps, software, and education. This can be a hurdle to adoption.
+          </li>
+          <li>
+            Cost
+          </li>
+          <li class="sub">
+            most successful dapps put very small portions of their code on the blockchain as it's expensive.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="web3_ex">
+      <header>Web3 Coding Examples</header>
+      <article>
+        <p>Here are examples of things you can do with Web3 and the corresponding code:
+        </p>
+        <ul>
+          <li>Looking up blocks</li>
+          <code>
+            # get a block by number
+>>> web3.eth.get_block(12345)
+{
+    'author': '0xad5C1768e5974C231b2148169da064e61910f31a',
+    'difficulty': 735512610763,
+    'extraData': '0x476574682f76312e302e302f6c696e75782f676f312e342e32',
+    'gasLimit': 5000,
+    'gasUsed': 0,
+    'hash': '0x767c2bfb3bdee3f78676c1285cd757bcd5d8c272cef2eb30d9733800a78c0b6d',
+    'logsBloom': '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    'miner': '0xad5c1768e5974c231b2148169da064e61910f31a',
+    'mixHash': '0x31d9ec7e3855aeba37fd92aa1639845e70b360a60f77f12eff530429ef8cfcba',
+    'nonce': '0x549f882c5f356f85',
+    'number': 12345,
+    'parentHash': '0x4b3c1d7e65a507b62734feca1ee9f27a5379e318bd52ae62de7ba67dbeac66a3',
+    'receiptsRoot': '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421',
+    'sealFields': ['0x31d9ec7e3855aeba37fd92aa1639845e70b360a60f77f12eff530429ef8cfcba',
+    '0x549f882c5f356f85'],
+    'sha3Uncles': '0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347',
+    'size': 539,
+    'stateRoot': '0xca495e22ed6b88c61714d129dbc8c94f5bf966ac581c09a57c0a72d0e55e7286',
+    'timestamp': 1438367030,
+    'totalDifficulty': 3862140487204603,
+    'transactions': [],
+    'transactionsRoot': '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421',
+    'uncles': [],
+}
+
+# get a block by it's hash
+>>> web3.eth.get_block('0x767c2bfb3bdee3f78676c1285cd757bcd5d8c272cef2eb30d9733800a78c0b6d')
+{...}
+          </code>
+          <li>
+            Checking the balance of an account
+          </li>
+          <code>
+            >>> web3.eth.get_balance('0x742d35Cc6634C0532925a3b844Bc454e4438f44e')
+3841357360894980500000001
+          </code>
+          <li>
+            Looking up transactions
+          </li>
+          <code>
+            >>> web3.eth.get_transaction('0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060')
+{
+    'blockHash': '0x4e3a3754410177e6937ef1f84bba68ea139e8d1a2258c5f85db9f1cd715a1bdd',
+    'blockNumber': 46147,
+    'condition': None,
+    'creates': None,
+    'from': '0xA1E4380A3B1f749673E270229993eE55F35663b4',
+    'gas': 21000,
+    'gasPrice': 50000000000000,
+    'hash': '0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060',
+    'input': '0x',
+    'networkId': None,
+    'nonce': 0,
+    'publicKey': '0x376fc429acc35e610f75b14bc96242b13623833569a5bb3d72c17be7e51da0bb58e48e2462a59897cead8ab88e78709f9d24fd6ec24d1456f43aae407a8970e4',
+    'r': '0x88ff6cf0fefd94db46111149ae4bfc179e9b94721fffd821d38d16464b3f71d0',
+    'raw': '0xf86780862d79883d2000825208945df9b87991262f6ba471f09758cde1c0fc1de734827a69801ca088ff6cf0fefd94db46111149ae4bfc179e9b94721fffd821d38d16464b3f71d0a045e0aff800961cfce805daef7016b9b675c137a6a41a548f7b60a3484c06a33a',
+    's': '0x45e0aff800961cfce805daef7016b9b675c137a6a41a548f7b60a3484c06a33a',
+    'standardV': '0x1',
+    'to': '0x5DF9B87991262F6BA471F09758CDE1c0FC1De734',
+    'transactionIndex': 0,
+    'v': '0x1c',
+    'value': 31337,
+}
+          </code>
+          <li>
+            Deploying new contracts
+          </li>
+          <code>
+            contract StoreVar {
+
+    uint8 public _myVar;
+    event MyEvent(uint indexed _var);
+
+    function setVar(uint8 _var) public {
+        _myVar = _var;
+        emit MyEvent(_var);
+    }
+
+    function getVar() public view returns (uint8) {
+        return _myVar;
+    }
+
+}
+          </code>
+          <li>
+            Query account balances
+          </li>
+          <code>
+            >>> alice = '0x7E5F4552091A69125d5DfCb7b8C2659029395Bdf'
+>>> bob = '0x2B5AD5c4795c026514f8317c7a215E218DcCD6cF'
+>>> raw_balance = contract.functions.balanceOf(alice).call()
+>>> raw_balance
+1000000000000000000000000
+>>> raw_balance // DECIMALS
+1000000
+>>> contract.functions.balanceOf(bob).call()
+0
+          </code>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="cent_v_decent">
+      <header>Centralization vs Decentralization</header>
+      <article>
+        <p>In the table below, we list some of the broad-strokes advantages and disadvantages of centralized and decentralized digital networks.*
+        </p>
+      </article>
+      <table>
+        <thead>
+          <th>Centralized Systems</th>
+          <th>Decentralized Systems</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+            Low network diameter (all participants are connected to a central authority); information propagates quickly, as propagation is handled by a central authority with lots of computational resources.
+            </td>
+            <td>
+              The furthest participants on the network may potentially be many edges away from each other. Information broadcast from one side of the network may take a long time to reach the other side.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Usually higher performance (higher throughput, fewer total computational resources expended) and easier to implement.
+            </td>
+            <td>
+              Usually lower performance (lower throughput, more total computational resources expended) and more complex to implement.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              In the event of conflicting data, resolution is clear and easy: the ultimate source of truth is the central authority.
+            </td>
+            <td>
+              A protocol (often complex) is needed for dispute resolution, if peers make conflicting claims about the state of data which participants are meant to be synchronized on.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Single point of failure: malicious actors may be able to take down the network by targeting the central authority.
+            </td>
+            <td>
+              No single point of failure: network can still function even if a large proportion of participants are attacked/taken out.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Coordination among network participants is much easier, and is handled by a central authority. Central authority can compel network participants to adopt upgrades, protocol updates, etc., with very little friction.
+            </td>
+            <td>
+              Coordination is often difficult, as no single agent has the final say in network-level decisions, protocol upgrades, etc. In the worst case, network is prone to fracturing when there are disagreements about protocol changes.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Central authority can censor data, potentially cutting off parts of the network from interacting with the rest of the network.
+            </td>
+            <td>
+              Censorship is much harder, as information has many ways to propagate across the network.
+            </td>
+          </tr>
+          <tr>
+            <td>Participation in the network is controlled by the central authority.
+            </td>
+            <td>
+              Anyone can participate in the network; there are no “gatekeepers.” Ideally, the cost of participation is very low.
+            </td>
+          </tr>
+        </tbody>
+       </table>
+      
+      <article>
+        <p>
+          *Note that these are general patterns that may not hold true in every network. Furthermore, in reality the degree to which a network is centralized/decentralized lies on a spectrum; no network is entirely centralized or entirely decentralized.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="closing">
+      <header>Closing Thoughts</header>
+      <p>While Web3 has limitations today, it will continue to grow and become the norm of how we interact on the internet. As we move the pendulum of society towards centralized we will naturally find ways back to decentralization with tools such as Web3.
+      </p>
+      <p>
+        For more information about the importance of decentralization check out:
+      </p>
+      <ul>
+        <li>
+          <a href="https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274" target="_blank">The Meaning of Decentralization</a>
+        </li>
+        <li>
+          <a href="https://medium.com/s/story/why-decentralization-matters-5e3f79f7638e" target="_blank">Why Decentralization Matters</a>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <p>Thanks to Ethereum.org for the great resource. This documentation page is a fork of <a href="https://ethereum.org/en/developers/docs/web2-vs-web3/" target="_blank">https://ethereum.org/en/developers/docs/web2-vs-web3/</a> and <a href="https://web3py.readthedocs.io/en/stable/examples.html" target="_blank">https://web3py.readthedocs.io/en/stable/examples.html</a></p>
+      <p>
+        Thanks to Freecodecamp and <a href="https://codepen.io/freeCodeCamp/full/NdrKKL">https://codepen.io/freeCodeCamp/full/NdrKKL</a> for the coding help.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
